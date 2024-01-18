@@ -8,7 +8,6 @@ import com.ctre.phoenix.sensors.WPI_Pigeon2;
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 import com.revrobotics.RelativeEncoder;
-
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
@@ -87,11 +86,12 @@ private DifferentialDrive drive = new DifferentialDrive(left, Right);
     SmartDashboard.putNumber("LimelightArea", area);
   }
   @Override
-  public void autonomousInit() {}
+  public void autonomousInit() {
 
+  }
   @Override
   public void autonomousPeriodic() {
-
+    
   }
   @Override
   public void teleopInit() {
